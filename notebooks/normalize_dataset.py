@@ -26,4 +26,11 @@ def normalize_dataset(ds, mm_scale=1, pix_scale=1, dt=1, d=1, U_theo=1):
     dsn['u'] = dsn['u'] / U_theo
     dsn['v'] = dsn['v'] / U_theo
     
+    
+    dsn.attrs['dt'] = dt
+    dsn.attrs['mm_scale'] = mm_scale
+    dsn.attrs['pix_scale'] = pix_scale
+    dsn.attrs['d'] = d
+    dsn.attrs['U_theo'] = U_theo
+    
     return dsn
