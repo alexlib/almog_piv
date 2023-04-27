@@ -12,15 +12,19 @@ def normalize_dataset(ds, mm_scale=1, pix_scale=1, dt=1, d=1, U_theo=1):
 
     # some convention for the cylinder case that we want to see left to right
     # with the cylinder on the left side at x=0, y=0
-    # turn to the left
-    dsn['x'] = dsn['x'].max() - dsn['x']
+    # turn to the 
+    
+    # not in April 23, only in Feb. 15
+    # in April we already used the under-channel mirror at 45 deg. 
+    # dsn['x'] = dsn['x'].max() - dsn['x']
 
     # make y = 0 in the middle
     middle = dsn['y'].max()/2
     dsn['y'] = dsn['y'] - middle
 
     # turn the flow from left to right
-    dsn['u'] = -1*dsn['u']
+    # Not in April 23
+    # dsn['u'] = -1*dsn['u']
 
     # normalize the velocity by some average flow rate value
     dsn['u'] = dsn['u'] / U_theo
