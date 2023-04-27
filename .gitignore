@@ -1,2 +1,7 @@
 
 *.pyc
+.vscode/PythonImportHelper-v2-Completion.json
+data/april23_run1_normed.nc
+data/april23_run2_normed.nc
+data/april23_run3_normed.nc
+data/.~lock.stepA.2 Data.xlsx\#
